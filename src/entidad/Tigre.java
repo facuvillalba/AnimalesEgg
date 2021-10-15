@@ -1,17 +1,23 @@
-package e4animal.entidad;
+package entidad;
 
-public class Gato {
+import java.util.Date;
+
+/**
+ *
+ * @author leonahuel
+ */
+public class Tigre {
     
     private String nombre;
     private String dueno;
     private String color;
-    private int edad;
+    private Date edad;
     private String direccion;
 
-    public Gato() {
+    public Tigre() {
     }
 
-    public Gato(String nombre, String dueno, String color, int edad, String direccion) {
+    public Tigre(String nombre, String dueno, String color, Date edad, String direccion) {
         this.nombre = nombre;
         this.dueno = dueno;
         this.color = color;
@@ -43,11 +49,11 @@ public class Gato {
         this.color = color;
     }
 
-    public int getEdad() {
+    public Date getEdad() {
         return edad;
     }
 
-    public void setEdad(int edad) {
+    public void setEdad(Date edad) {
         this.edad = edad;
     }
 
@@ -61,7 +67,9 @@ public class Gato {
 
     @Override
     public String toString() {
-        return "Gato{" + "nombre=" + nombre + ", dueno=" + dueno + ", color=" + color + ", edad=" + edad + ", direccion=" + direccion + '}';
+        return "Tigre{" + "nombre=" + nombre + ", dueno=" + dueno + ", color=" + color + ", edad=" + edad + ", direccion=" + direccion + '}';
     }
-
+    
+    
+    
 }
